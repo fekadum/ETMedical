@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  etm:
+    image: ${DOCKER_REGISTRY-}etm
+    build:
+      context: .
+      dockerfile: ETM/Dockerfile
